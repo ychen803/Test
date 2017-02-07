@@ -1,5 +1,0 @@
-D:\Working\EWEMS2\Phase 2\Source Codes and DB\SPF.OWAES\SPF.OWAES.Models\bin\Debug\SPF.OWAES.Models.dll
-D:\Working\EWEMS2\Phase 2\Source Codes and DB\SPF.OWAES\SPF.OWAES.Models\bin\Debug\SPF.OWAES.Models.pdb
-D:\Working\EWEMS2\Phase 2\Source Codes and DB\SPF.OWAES\SPF.OWAES.Models\obj\Debug\SPF.OWAES.Models.dll
-D:\Working\EWEMS2\Phase 2\Source Codes and DB\SPF.OWAES\SPF.OWAES.Models\obj\Debug\SPF.OWAES.Models.pdb
-D:\Working\EWEMS2\Phase 2\Source Codes and DB\SPF.OWAES\SPF.OWAES.Models\obj\Debug\SPF.OWAES.Models.csprojResolveAssemblyReference.cache

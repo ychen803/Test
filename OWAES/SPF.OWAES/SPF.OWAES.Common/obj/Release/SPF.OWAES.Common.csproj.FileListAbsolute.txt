@@ -1,5 +1,0 @@
-D:\Working\EWEMS2\Phase 2\Source Codes and DB\SPF.OWAES\SPF.OWAES.Common\bin\Release\SPF.OWAES.Common.dll
-D:\Working\EWEMS2\Phase 2\Source Codes and DB\SPF.OWAES\SPF.OWAES.Common\bin\Release\SPF.OWAES.Common.pdb
-D:\Working\EWEMS2\Phase 2\Source Codes and DB\SPF.OWAES\SPF.OWAES.Common\bin\Release\log4net.dll
-D:\Working\EWEMS2\Phase 2\Source Codes and DB\SPF.OWAES\SPF.OWAES.Common\obj\Release\SPF.OWAES.Common.dll
-D:\Working\EWEMS2\Phase 2\Source Codes and DB\SPF.OWAES\SPF.OWAES.Common\obj\Release\SPF.OWAES.Common.pdb
