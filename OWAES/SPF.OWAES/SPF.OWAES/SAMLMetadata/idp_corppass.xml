@@ -1,0 +1,103 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<EntityDescriptor xmlns="urn:oasis:names:tc:SAML:2.0:metadata" xmlns:ds="http://www.w3.org/2000/09/xmldsig#" xmlns:shibmd="urn:mace:shibboleth:metadata:1.0" xmlns:xsi="http://www.w3.org/2001/XMLSchema-instance" entityID="https://spcp.ncs.com/corppass/shibboleth">
+
+    <IDPSSODescriptor protocolSupportEnumeration="urn:mace:shibboleth:1.0 urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+
+        <Extensions>
+            <shibmd:Scope regexp="false">ncs.com</shibmd:Scope>
+        </Extensions>
+
+        <KeyDescriptor>
+            <ds:KeyInfo>
+                <ds:X509Data>
+                    <ds:X509Certificate>
+
+MIIDGzCCAgOgAwIBAgIUO4YyCgeHFdofHvVxjGSX22tPo+swDQYJKoZIhvcNAQEF
+BQAwFzEVMBMGA1UEAxMMc3BjcC5uY3MuY29tMB4XDTE1MDcwOTAyMDEwMFoXDTM1
+MDcwOTAyMDEwMFowFzEVMBMGA1UEAxMMc3BjcC5uY3MuY29tMIIBIjANBgkqhkiG
+9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlQ8iadxoKgu/ogtGKXCZbbyd9s4VaFCOJTqq
+gFPVy5SuwkYtTTo3URwh/OqQo2sxUlEC41+12aFwz4WpokkkKUNZxIq4TnhU35XB
+j1gdTg+UbqrTjwWiXfl2y8fo6rpEEAmP9xofXkYW0qUQoRT62UcurR7TT1krRsLF
+76C9RvIIsgkER2Iy09vaaR+CV+n6Xwu0w0sm0hPIVhqHLp9TQGVQ4bvDqLwuNy48
+Ltq4vGgLg8cwoC612WzNl/1Q9A8BIW0koYVgxSYOrYxy2/+kI1jrrb7F9IF/Ub7n
+7/Ebgwymod5r9xOyaluN9sCIZbOLeopT2Iyt36bYWRPRRs8P3wIDAQABo18wXTA8
+BgNVHREENTAzggxzcGNwLm5jcy5jb22GI2h0dHBzOi8vc3BjcC5uY3MuY29tL2lk
+cC9zaGliYm9sZXRoMB0GA1UdDgQWBBSucVhhZWtreuod1O31pW5LL6IggjANBgkq
+hkiG9w0BAQUFAAOCAQEANT+iv5/imiDevMdqKCBQQZ2gh6ok9UfkmXck5j9fx+ds
+oqMGqS+9lwMgsj3Nn6aFVsbejN6rk+Qo3LCUfmemF4nntB5KyjifddnUbzY875Md
+9aU9sR6l9kMrcgKBQVlIYcxg/foP/89d6YxlOWUt9KYZdrjik3hq0IVqAikpDd/8
+F7BtAiUzFg7N8B0XdA4Li/HTy//3LBXl98cMCdsKRaTb6Rm/a/f0woXGSi7GmU++
+Ppqex0sHYOpT6Jc/HA8HtDQg/LXShAUbC+y8nN+mj9aTYkYfOBir/ewKkHGYgn1c
+t1oBXg3Vb47QiSlmCdYJ1IASm79IwyP3NM632MUVxg==
+
+                    </ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </KeyDescriptor>
+        
+        <ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="http://spcp.ncs.com:9090/corppass/profile/SAML1/SOAP/ArtifactResolution" index="1"/>
+
+        <ArtifactResolutionService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="http://spcp.ncs.com:9090/corppass/profile/SAML2/SOAP/ArtifactResolution" index="2"/>
+        
+        <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://spcp.ncs.com:9443/corppass/profile/SAML2/Redirect/SLO" />
+        
+        <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://spcp.ncs.com/corppass/profile/SAML2/POST/SLO" />
+        
+        <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://spcp.ncs.com:9443/corppass/profile/SAML2/SOAP/SLO" />
+                                   
+        <NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
+
+        <SingleSignOnService Binding="urn:mace:shibboleth:1.0:profiles:AuthnRequest" Location="https://spcp.ncs.com/corppass/profile/Shibboleth/SSO"/>
+        
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="https://spcp.ncs.com/corppass/profile/SAML2/POST/SSO"/>
+
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST-SimpleSign" Location="https://spcp.ncs.com/corppass/profile/SAML2/POST-SimpleSign/SSO"/>
+        
+        <SingleSignOnService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="https://spcp.ncs.com/corppass/profile/SAML2/Redirect/SSO"/>
+    </IDPSSODescriptor>
+
+    <AttributeAuthorityDescriptor protocolSupportEnumeration="urn:oasis:names:tc:SAML:1.1:protocol urn:oasis:names:tc:SAML:2.0:protocol">
+
+        <Extensions>
+            <shibmd:Scope regexp="false">ncs.com</shibmd:Scope>
+        </Extensions>
+
+        <KeyDescriptor>
+            <ds:KeyInfo>
+                <ds:X509Data>
+                    <ds:X509Certificate>
+
+MIIDGzCCAgOgAwIBAgIUO4YyCgeHFdofHvVxjGSX22tPo+swDQYJKoZIhvcNAQEF
+BQAwFzEVMBMGA1UEAxMMc3BjcC5uY3MuY29tMB4XDTE1MDcwOTAyMDEwMFoXDTM1
+MDcwOTAyMDEwMFowFzEVMBMGA1UEAxMMc3BjcC5uY3MuY29tMIIBIjANBgkqhkiG
+9w0BAQEFAAOCAQ8AMIIBCgKCAQEAlQ8iadxoKgu/ogtGKXCZbbyd9s4VaFCOJTqq
+gFPVy5SuwkYtTTo3URwh/OqQo2sxUlEC41+12aFwz4WpokkkKUNZxIq4TnhU35XB
+j1gdTg+UbqrTjwWiXfl2y8fo6rpEEAmP9xofXkYW0qUQoRT62UcurR7TT1krRsLF
+76C9RvIIsgkER2Iy09vaaR+CV+n6Xwu0w0sm0hPIVhqHLp9TQGVQ4bvDqLwuNy48
+Ltq4vGgLg8cwoC612WzNl/1Q9A8BIW0koYVgxSYOrYxy2/+kI1jrrb7F9IF/Ub7n
+7/Ebgwymod5r9xOyaluN9sCIZbOLeopT2Iyt36bYWRPRRs8P3wIDAQABo18wXTA8
+BgNVHREENTAzggxzcGNwLm5jcy5jb22GI2h0dHBzOi8vc3BjcC5uY3MuY29tL2lk
+cC9zaGliYm9sZXRoMB0GA1UdDgQWBBSucVhhZWtreuod1O31pW5LL6IggjANBgkq
+hkiG9w0BAQUFAAOCAQEANT+iv5/imiDevMdqKCBQQZ2gh6ok9UfkmXck5j9fx+ds
+oqMGqS+9lwMgsj3Nn6aFVsbejN6rk+Qo3LCUfmemF4nntB5KyjifddnUbzY875Md
+9aU9sR6l9kMrcgKBQVlIYcxg/foP/89d6YxlOWUt9KYZdrjik3hq0IVqAikpDd/8
+F7BtAiUzFg7N8B0XdA4Li/HTy//3LBXl98cMCdsKRaTb6Rm/a/f0woXGSi7GmU++
+Ppqex0sHYOpT6Jc/HA8HtDQg/LXShAUbC+y8nN+mj9aTYkYfOBir/ewKkHGYgn1c
+t1oBXg3Vb47QiSlmCdYJ1IASm79IwyP3NM632MUVxg==
+
+                    </ds:X509Certificate>
+                </ds:X509Data>
+            </ds:KeyInfo>
+        </KeyDescriptor>
+
+        <AttributeService Binding="urn:oasis:names:tc:SAML:1.0:bindings:SOAP-binding" Location="https://spcp.ncs.com:443/corppass/profile/SAML1/SOAP/AttributeQuery"/>
+        
+        <AttributeService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="https://spcp.ncs.com:443/corppass/profile/SAML2/SOAP/AttributeQuery"/>
+        
+        <NameIDFormat>urn:mace:shibboleth:1.0:nameIdentifier</NameIDFormat>
+        <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
+        
+    </AttributeAuthorityDescriptor>
+    
+</EntityDescriptor>

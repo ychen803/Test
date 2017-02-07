@@ -1,0 +1,49 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<!--
+This file is used by the publish/package process of your Web project. You can customize the behavior of this process
+by editing this MSBuild file. In order to learn more about this please visit http://go.microsoft.com/fwlink/?LinkID=208121. 
+-->
+<Project ToolsVersion="4.0" xmlns="http://schemas.microsoft.com/developer/msbuild/2003">
+  <PropertyGroup>
+    <TimeStampOfAssociatedLegacyPublishXmlFile />
+    <_PublishTargetUrl>D:\Working\EWEMS2\Phase 2\CR\CR-15\Deployment\UAT\OWAES.Wcf</_PublishTargetUrl>
+  </PropertyGroup>
+  <ItemGroup>
+    <File Include="bin/EntityFramework.dll">
+      <publishTime>08/25/2015 17:32:18</publishTime>
+    </File>
+    <File Include="bin/EntityFramework.SqlServer.dll">
+      <publishTime>08/25/2015 17:32:18</publishTime>
+    </File>
+    <File Include="bin/log4net.dll">
+      <publishTime>09/25/2013 15:23:45</publishTime>
+    </File>
+    <File Include="bin/SPF.OWAES.Common.dll">
+      <publishTime>11/24/2015 14:59:22</publishTime>
+    </File>
+    <File Include="bin/SPF.OWAES.DataAccess.dll">
+      <publishTime>11/24/2015 16:36:11</publishTime>
+    </File>
+    <File Include="bin/SPF.OWAES.Models.dll">
+      <publishTime>11/24/2015 14:59:22</publishTime>
+    </File>
+    <File Include="bin/SPF.OWAES.WCF.dll">
+      <publishTime>11/25/2015 11:08:54</publishTime>
+    </File>
+    <File Include="Log4Net.config">
+      <publishTime>10/28/2015 15:22:59</publishTime>
+    </File>
+    <File Include="LogService.svc">
+      <publishTime>08/21/2015 15:57:02</publishTime>
+    </File>
+    <File Include="packages.config">
+      <publishTime>08/25/2015 17:32:24</publishTime>
+    </File>
+    <File Include="WarrantService.svc">
+      <publishTime>08/21/2015 15:05:52</publishTime>
+    </File>
+    <File Include="Web.config">
+      <publishTime>11/24/2015 16:36:12</publishTime>
+    </File>
+  </ItemGroup>
+</Project>

@@ -1,0 +1,32 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Mapping Space="C-S" xmlns="http://schemas.microsoft.com/ado/2009/11/mapping/cs">
+  <EntityContainerMapping StorageEntityContainer="WEU_POEModelStoreContainer" CdmEntityContainer="WEU_OWAESEntities">
+    <EntitySetMapping Name="vwWarrantInfoes">
+      <EntityTypeMapping TypeName="WEU_POEModel.vwWarrantInfo">
+        <MappingFragment StoreEntitySet="vwWarrantInfo">
+          <ScalarProperty Name="MsgContent" ColumnName="MsgContent" />
+          <ScalarProperty Name="CaseTypeDescription" ColumnName="CaseTypeDescription" />
+          <ScalarProperty Name="SummonsNo" ColumnName="SummonsNo" />
+          <ScalarProperty Name="PersonIDNo" ColumnName="PersonIDNo" />
+          <ScalarProperty Name="WarrantNo" ColumnName="WarrantNo" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="LOGs">
+      <EntityTypeMapping TypeName="WEU_POEModel.LOG">
+        <MappingFragment StoreEntitySet="LOG">
+          <ScalarProperty Name="PersonIDNo" ColumnName="PersonIDNo" />
+          <ScalarProperty Name="LogDateTime" ColumnName="LogDateTime" />
+          <ScalarProperty Name="LogID" ColumnName="LogID" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+    <EntitySetMapping Name="vwLastSuccessfulUpdates">
+      <EntityTypeMapping TypeName="WEU_POEModel.vwLastSuccessfulUpdate">
+        <MappingFragment StoreEntitySet="vwLastSuccessfulUpdate">
+          <ScalarProperty Name="LastSuccessfulUpdate" ColumnName="LastSuccessfulUpdate" />
+        </MappingFragment>
+      </EntityTypeMapping>
+    </EntitySetMapping>
+  </EntityContainerMapping>
+</Mapping>

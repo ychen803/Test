@@ -1,0 +1,50 @@
+﻿<?xml version="1.0" encoding="utf-8"?>
+<Schema Namespace="WEU_POEModel.Store" Provider="System.Data.SqlClient" ProviderManifestToken="2008" Alias="Self" xmlns:store="http://schemas.microsoft.com/ado/2007/12/edm/EntityStoreSchemaGenerator" xmlns:customannotation="http://schemas.microsoft.com/ado/2013/11/edm/customannotation" xmlns="http://schemas.microsoft.com/ado/2009/11/edm/ssdl">
+  <EntityType Name="LOG">
+    <Key>
+      <PropertyRef Name="LogID" />
+    </Key>
+    <Property Name="LogID" Type="uniqueidentifier" Nullable="false" />
+    <Property Name="LogDateTime" Type="datetime" />
+    <Property Name="PersonIDNo" Type="varchar" MaxLength="30" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'WEU_POE.dbo.vwLastSuccessfulUpdate' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwLastSuccessfulUpdate">
+    <Key>
+      <PropertyRef Name="LastSuccessfulUpdate" />
+    </Key>
+    <Property Name="LastSuccessfulUpdate" Type="datetime" Nullable="false" />
+  </EntityType>
+  <!--Errors Found During Generation:
+warning 6002: The table/view 'WEU_POE.dbo.vwWarrantInfo' does not have a primary key defined. The key has been inferred and the definition was created as a read-only table/view.-->
+  <EntityType Name="vwWarrantInfo">
+    <Key>
+      <PropertyRef Name="WarrantNo" />
+      <PropertyRef Name="PersonIDNo" />
+      <PropertyRef Name="MsgContent" />
+    </Key>
+    <Property Name="WarrantNo" Type="varchar" MaxLength="30" Nullable="false" />
+    <Property Name="PersonIDNo" Type="varchar" MaxLength="20" Nullable="false" />
+    <Property Name="SummonsNo" Type="varchar" MaxLength="500" />
+    <Property Name="CaseTypeDescription" Type="varchar" MaxLength="200" />
+    <Property Name="MsgContent" Type="nvarchar" MaxLength="500" Nullable="false" />
+  </EntityType>
+  <EntityContainer Name="WEU_POEModelStoreContainer">
+    <EntitySet Name="LOG" EntityType="Self.LOG" Schema="dbo" store:Type="Tables" />
+    <EntitySet Name="vwLastSuccessfulUpdate" EntityType="Self.vwLastSuccessfulUpdate" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vwLastSuccessfulUpdate].[LastSuccessfulUpdate] AS [LastSuccessfulUpdate]
+    FROM [dbo].[vwLastSuccessfulUpdate] AS [vwLastSuccessfulUpdate]</DefiningQuery>
+    </EntitySet>
+    <EntitySet Name="vwWarrantInfo" EntityType="Self.vwWarrantInfo" store:Type="Views" store:Schema="dbo">
+      <DefiningQuery>SELECT 
+    [vwWarrantInfo].[WarrantNo] AS [WarrantNo], 
+    [vwWarrantInfo].[PersonIDNo] AS [PersonIDNo], 
+    [vwWarrantInfo].[SummonsNo] AS [SummonsNo], 
+    [vwWarrantInfo].[CaseTypeDescription] AS [CaseTypeDescription], 
+    [vwWarrantInfo].[MsgContent] AS [MsgContent]
+    FROM [dbo].[vwWarrantInfo] AS [vwWarrantInfo]</DefiningQuery>
+    </EntitySet>
+  </EntityContainer>
+</Schema>

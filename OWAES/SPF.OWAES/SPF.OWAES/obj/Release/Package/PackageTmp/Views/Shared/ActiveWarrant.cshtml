@@ -1,0 +1,106 @@
+﻿@model List<SPF.OWAES.Models.vwWarrantInfo>
+
+@Html.Raw(ViewBag.ActiveWarrantList)
+
+
+@*<div id='st-accordion' class='st-accordion'>
+    <p><u><strong>Agency(s)</strong></u></p>
+    <ul>
+        <!--Looping-->
+        <li class='licasetype'>
+            <a href='#' class='CaseType'>
+                xxx HDB xxx (3)
+                <span class='st-arrow'>Open or Close</span>
+            </a>
+            <div class='st-content'>
+                <!--Looping-->
+                <div class="row" style="border-bottom:1px solid #eaeaea;border-top:1px solid #eaeaea; padding:0px;">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-5"><strong>Warrant No</strong></div>
+                    <div class="col-sm-6"><strong>Summons No/ Report No </strong></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-1 col-xs-12">1.</div>
+                    <div class="col-sm-5 col-xs-12"> WA017418/2015 </div>
+                    <div class="col-sm-6 col-xs-12"> 2952154545422-2015 </div>
+                    <div class="col-sm-1 col-xs-12">2.</div>
+                    <div class="col-sm-5 col-xs-12"> WA0112365-12035-0123654782/2012 </div>
+                    <div class="col-sm-6 col-xs-12"> 85592115454245-25252524141-2013 </div>
+                    <div class="col-sm-1 col-xs-12">3.</div>
+                    <div class="col-sm-5 col-xs-12"> WA096854/2011 </div>
+                    <div class="col-sm-6 col-xs-12"> SS2552/01,MSS885/02,MSS6801/01 </div>
+                </div>
+            </div>
+        </li>
+
+        <li class='licasetype'>
+            <a href='#' class='CaseType'>
+                xxx URACP xxx (4)
+                <span class='st-arrow'>Open or Close</span>
+            </a>
+            <div class='st-content'>
+                <!--Looping-->
+                <div class="row" style="border-bottom:1px solid #eaeaea;border-top:1px solid #eaeaea; padding:0px;">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-5"><strong>Warrant No</strong></div>
+                    <div class="col-sm-6"><strong>Summons No/ Report No </strong></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-1 col-xs-12">1.</div>
+                    <div class="col-sm-5 col-xs-12"> WA017418/2015 </div>
+                    <div class="col-sm-6 col-xs-12"> 2952154545422-2015 </div>
+                    <div class="col-sm-1 col-xs-12">2.</div>
+                    <div class="col-sm-5 col-xs-12"> WA0112365-12035-0123654782/2012 </div>
+                    <div class="col-sm-6 col-xs-12"> 85592115454245-25252524141-2013 </div>
+                    <div class="col-sm-1 col-xs-12">3.</div>
+                    <div class="col-sm-5 col-xs-12"> WA096854/2011 </div>
+                    <div class="col-sm-6 col-xs-12"> SS2552/01,MSS885/02,MSS6801/01 </div>
+                    <div class="col-sm-1 col-xs-12">4.</div>
+                    <div class="col-sm-5 col-xs-12"> WA258745-2015 </div>
+                    <div class="col-sm-6 col-xs-12"> URACP-0024-2015 </div>
+                </div>
+            </div>
+        </li>
+
+        <li class='licasetype'>
+            <a href='#' class='CaseType'>
+                xxx NEA xxx (2)
+                <span class='st-arrow'>Open or Close</span>
+            </a>
+            <div class='st-content'>
+                <!--Looping-->
+                <div class="row" style="border-bottom:1px solid #eaeaea;border-top:1px solid #eaeaea; padding:0px;">
+                    <div class="col-sm-1"></div>
+                    <div class="col-sm-5"><strong>Warrant No</strong></div>
+                    <div class="col-sm-6"><strong>Summons No/ Report No </strong></div>
+                </div>
+                <div class="row">
+                    <div class="col-sm-1 col-xs-12">1.</div>
+                    <div class="col-sm-5 col-xs-12"> WA017418/2015 </div>
+                    <div class="col-sm-6 col-xs-12"> 2952154545422-2015 </div>
+                    <div class="col-sm-1 col-xs-12">2.</div>
+                    <div class="col-sm-5 col-xs-12"> WA0112365-12035-0123654782/2012 </div>
+                    <div class="col-sm-6 col-xs-12"> 85592115454245-25252524141-2013 </div>
+                </div>
+            </div>
+        </li>
+    </ul>
+</div>*@
+
+
+<script type="text/javascript">
+    $(function () {
+        $('#st-accordion').accordion();
+    });
+</script>
+<noscript>
+    <style>
+        .st-accordion ul li {
+            height: auto;
+        }
+
+            .st-accordion ul li > a span {
+                visibility: hidden;
+            }
+    </style>
+</noscript>

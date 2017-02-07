@@ -1,0 +1,5 @@
+cot-name=cot.example.com
+sun-fm-cot-status=Active
+sun-fm-trusted-providers=https://sso-stg.police.gov.sg:443/spfsso/shibboleth, https://spcp.ncs.com/corppass/shibboleth, http://local.simclient.test/
+sun-fm-saml2-readerservice-url=
+sun-fm-saml2-writerservice-url=

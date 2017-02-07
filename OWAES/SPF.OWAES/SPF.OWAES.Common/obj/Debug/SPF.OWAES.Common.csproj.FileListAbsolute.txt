@@ -1,0 +1,6 @@
+D:\Working\EWEMS2\Phase 2\Source Codes and DB\SPF.OWAES\SPF.OWAES.Common\bin\Debug\SPF.OWAES.Common.dll
+D:\Working\EWEMS2\Phase 2\Source Codes and DB\SPF.OWAES\SPF.OWAES.Common\bin\Debug\SPF.OWAES.Common.pdb
+D:\Working\EWEMS2\Phase 2\Source Codes and DB\SPF.OWAES\SPF.OWAES.Common\bin\Debug\log4net.dll
+D:\Working\EWEMS2\Phase 2\Source Codes and DB\SPF.OWAES\SPF.OWAES.Common\obj\Debug\SPF.OWAES.Common.dll
+D:\Working\EWEMS2\Phase 2\Source Codes and DB\SPF.OWAES\SPF.OWAES.Common\obj\Debug\SPF.OWAES.Common.pdb
+D:\Working\EWEMS2\Phase 2\Source Codes and DB\SPF.OWAES\SPF.OWAES.Common\obj\Debug\SPF.OWAES.Common.csprojResolveAssemblyReference.cache

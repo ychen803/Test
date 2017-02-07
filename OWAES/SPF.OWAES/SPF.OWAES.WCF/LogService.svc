@@ -1,0 +1,1 @@
+﻿<%@ ServiceHost Language="C#" Debug="true" Service="SPF.OWAES.WCF.LogService" CodeBehind="LogService.svc.cs" %>

@@ -1,0 +1,25 @@
+﻿
+<div class="row sub-title">
+    <div class="col-sm-6 col-xs-12" style="padding-top: 5px">Outstanding Warrant of Arrest</div>
+    <div id="login-user" class="col-sm-6 col-xs-12">
+        <span class="logout-user"> <a class="logoff" href="@Url.Action("logout", "Home")">Log off</a> </span>
+        <span class="menu-seperator">|</span>
+        <span class="login-user">Login ID : @ViewBag.LoginInfo</span>
+    </div>
+</div>
+
+@{var wa = ViewBag.WarrantCount;}
+@if (wa > 0 || wa == -1)
+{
+    Html.RenderPartial("ActiveWarrant");
+    Html.RenderPartial("Instructions");
+}
+else
+{ Html.RenderPartial("NoOutstandingWA"); }
+
+@*@{ Html.RenderPartial("NoOutstandingWA");}*@
+@{ Html.RenderPartial("AdditionalInformation");}
+
+<p class="short-message">
+    <strong>Last updated :</strong>  @ViewBag.LastSuccessfulUpdateTime
+</p>

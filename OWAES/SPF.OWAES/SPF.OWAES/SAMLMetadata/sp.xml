@@ -1,0 +1,66 @@
+<EntityDescriptor entityID="http://local.simclient.test/" xmlns="urn:oasis:names:tc:SAML:2.0:metadata">
+  <SPSSODescriptor AuthnRequestsSigned="false" WantAssertionsSigned="false" protocolSupportEnumeration="urn:oasis:names:tc:SAML:2.0:protocol">
+    <KeyDescriptor use="signing">
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:X509Data>
+          <ds:X509Certificate>
+            MIIDizCCAnOgAwIBAgIQGhr4SkeaIqBOTKXcxoL5xjANBgkqhkiG9w0BAQsFADBo
+            MRIwEAYDVQQGEwlTaW5nYXBvcmUxEjAQBgNVBAcMCVNpbmdhcG9yZTEWMBQGA1UE
+            CgwNTkNTIFB0ZS4gTHRkLjEMMAoGA1UECwwDQ0FPMRgwFgYDVQQDDA9leGFtcGxl
+            LnNpbS5uZXQwHhcNMTUwNTIxMTA1NTU5WhcNMjAwNTIyMTA1NTU3WjBoMRIwEAYD
+            VQQGEwlTaW5nYXBvcmUxEjAQBgNVBAcMCVNpbmdhcG9yZTEWMBQGA1UECgwNTkNT
+            IFB0ZS4gTHRkLjEMMAoGA1UECwwDQ0FPMRgwFgYDVQQDDA9leGFtcGxlLnNpbS5u
+            ZXQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC1z41vMy3m7xFVKHte
+            cKcXH5mo7H1ZX3rhjDVhJ5vqJA7yxyScVYf2qQ7RpNTm0mzlooItit699HtTy/es
+            DKg+uJnhz6w/79xpQ9wGQtz4rT/Xn4QpNivkVdTu0Xt/RLarH/0nXEbvSQSmMkzQ
+            7ihNB2C8g850ozgaqdvt4pjILLdiLIZBQ/0d78sqt3wjcliaujGwwWmHvtEZlzJK
+            iV0CUVlUTdJxBWTQdXEjeE7+sHzNOZUSCmNKDpEjyJrAggzmBde3lF/6lLeb7SU+
+            AQiQY36OikbSZw0zmdfIBUVLVM5wAbKxyVSati+jqI7olnC+QTA+iIVshjNgPy3d
+            BLBlAgMBAAGjMTAvMA4GA1UdDwEB/wQEAwIHgDAdBgNVHQ4EFgQUHN9vRzvqLRpD
+            9Tbq4Qv5tUWpctswDQYJKoZIhvcNAQELBQADggEBAD271vUbx3a/+HCXs8K9SxCU
+            HNBmah3SefiYDudmwu6mmygTaJSa3Jf39Ov18aRlnUcLhscVfcHax+mHOqFl/YT0
+            vcR4+S54F4nBqCDT0PDcu6QB4gxm7MtPfUpPG8fCST0epNZ25yAAvkoPfGiE2GiY
+            qP7qVZoIm4FhNhcdbsch0bCKqnUA18ynr3ZmHCgLxNvZ02yheffkxM+ksxWJoHPi
+            LsLLjs1Yoss7MDNgiVBbhno3GWOXh/m1UBd6Tk/0H/tYSwWnd+psGaXcaxQ+w+N7
+            cXRCCz/TTm1JDw2vU1oaGq5PwD+34e5ETwXRLk3Iy7R1lkvTw7rPaDWrid50gkY=
+          </ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </KeyDescriptor>
+
+    <KeyDescriptor use="encryption">
+      <ds:KeyInfo xmlns:ds="http://www.w3.org/2000/09/xmldsig#">
+        <ds:X509Data>
+          <ds:X509Certificate>
+            MIIDizCCAnOgAwIBAgIQdyxxtqngX5pK3lQjUhw3SDANBgkqhkiG9w0BAQsFADBo
+            MRIwEAYDVQQGEwlTaW5nYXBvcmUxEjAQBgNVBAcMCVNpbmdhcG9yZTEWMBQGA1UE
+            CgwNTkNTIFB0ZS4gTHRkLjEMMAoGA1UECwwDQ0FPMRgwFgYDVQQDDA9leGFtcGxl
+            LnNpbS5uZXQwHhcNMTUwNTIxMTA1ODAyWhcNMjAwNTIyMTA1ODAxWjBoMRIwEAYD
+            VQQGEwlTaW5nYXBvcmUxEjAQBgNVBAcMCVNpbmdhcG9yZTEWMBQGA1UECgwNTkNT
+            IFB0ZS4gTHRkLjEMMAoGA1UECwwDQ0FPMRgwFgYDVQQDDA9leGFtcGxlLnNpbS5u
+            ZXQwggEiMA0GCSqGSIb3DQEBAQUAA4IBDwAwggEKAoIBAQC4vzumc5HeuooNOEDV
+            niP0XrqnfjHj6TpOy8mRDxj4tVbTU34Df+YpB2WtJaquFd2i2xJ28J8htti6RQEc
+            OOfTWLsjFFhiLshJDZeNXN0PzLgqdniK5wQfMrcGi9Fu3VwnRf2RN+Jz0r4+GUdI
+            Di58w+Dqvv49yYPfwl8csvVwuEIJAMbil4WLf0hLcxySnxmX2WjxQGpo5j55XbQT
+            +2Jg7u4W4gxAhHb0CEH4D9W5IEp8iGlLJx6boAoYScSqxiULMx4y+tMnhu/FTeBd
+            ljNT+Ak2Y5G8rNu2sJRk7GocBF61N21KI3OrAS40+T4CK3F08zl+NPcKz2Ne76hS
+            gq2xAgMBAAGjMTAvMA4GA1UdDwEB/wQEAwIEEDAdBgNVHQ4EFgQUFKTT1rnbBwaU
+            jjfLNgeyLDiTXjYwDQYJKoZIhvcNAQELBQADggEBALM15SKZsh6ixzgxzehb1DKq
+            x+VIx8ob85tzHtoFjbykGeOM8qVIJ0wyDXhxxZTEfAtoOImPxo7qRFrHZm/9Qeq/
+            LHv5jjj6KXY6EtZQES/xL1nSgfdId55yn6A7S3LHBPp1fWY7Byx1hUcZHQHgvg71
+            8/KrSHeiRPJRDcfS38pl6ogEJXCOYoKcxqLLKaYD/fJiHVNkzB8K5JhIiZsXLVkc
+            flNps6ItNhvWIpxaj0tBue6LsBz39W6CffnHFUt6ztDBNryLfpBgt6d/2iz2mm31
+            cVqHg06dc0gde88mqqeNMvKBeQhPlGQFftZ0LybL/XH/KxB6pvQ0PAIgTEm4iac=
+          </ds:X509Certificate>
+        </ds:X509Data>
+      </ds:KeyInfo>
+    </KeyDescriptor>
+
+    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Redirect" Location="http://localhost:8080/SingPassSingleLogoutService.ashx" ResponseLocation="http://localhost:8080/SingPassSingleLogoutService.ashx"/>
+    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://localhost:8080/SingPassSingleLogoutService.ashx" ResponseLocation="http://localhost:8080/SingPassSingleLogoutService.ashx"/>
+    <SingleLogoutService Binding="urn:oasis:names:tc:SAML:2.0:bindings:SOAP" Location="http://localhost:8080/SingPassSingleLogoutService.ashx"/>
+    <NameIDFormat>urn:oasis:names:tc:SAML:2.0:nameid-format:transient</NameIDFormat>
+    <AssertionConsumerService isDefault="true" index="0" Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-POST" Location="http://localhost:8080/SingPassAssertionConsumerService.ashx"/>
+    <AssertionConsumerService index="1" Binding="urn:oasis:names:tc:SAML:2.0:bindings:HTTP-Artifact" Location="http://localhost:8080/SingPassAssertionConsumerService.ashx"/>
+  </SPSSODescriptor>
+</EntityDescriptor>
